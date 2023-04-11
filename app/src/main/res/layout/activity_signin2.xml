@@ -4,6 +4,163 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SigninActivity2">
+    tools:context=".LoginActivity2"
+    android:background="@color/ColorBL">
+
+
+    <ImageView
+        android:id="@+id/icBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="40dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome \nBack"
+        app:layout_constraintTop_toBottomOf="@+id/icBack"
+        app:layout_constraintStart_toStartOf="@+id/icBack"
+        android:textSize="30sp"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/LogButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="40dp"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/baseline1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/LogButton"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="40dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="10"
+            android:background="@color/white"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="10"
+            android:background="@color/white"
+            />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:text="Log In"
+        app:layout_constraintBottom_toTopOf="@+id/baseline1"
+        app:layout_constraintStart_toStartOf="@+id/LogButton"
+        app:layout_constraintEnd_toEndOf="@+id/LogButton"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/idEdtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:hint="Password"
+        android:textSize="17dp"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/logUpButton"
+        android:drawableRight="@drawable/baseline_remove_red_eye_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/logUpButton" />
+
+
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Email"
+        android:drawableLeft="@drawable/email_ic"
+        android:layout_marginLeft="35dp"
+        android:textSize="17dp"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_marginRight="35dp"
+        app:layout_constraintBottom_toTopOf="@id/idEdtUserName"
+        app:layout_constraintEnd_toEndOf="@id/LogButton"
+        app:layout_constraintStart_toStartOf="@+id/logUpButton" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Name"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:layout_marginLeft="35dp"
+        android:textSize="17dp"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_marginRight="35dp"
+        app:layout_constraintBottom_toTopOf="@id/editName"
+        app:layout_constraintEnd_toEndOf="@id/LogButton"
+        app:layout_constraintStart_toStartOf="@+id/logUpButton" />
+
+
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
